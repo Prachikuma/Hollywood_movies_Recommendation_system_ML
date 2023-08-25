@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About_us</title>
+
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+     <!-- Auto Complete -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="content1" style="background: black ;">
+  <div class="header">
+    <nav class="navbar navbar-expand-lg" style="background: linear-gradient(rgb(196, 0, 0),black);">
+      <a class="navbar-brand" href="#" style="color: rgb(253, 253, 253);">Movie Recommendation System</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:5000/" style="color:white">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}" style="color:white"> About us </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    <div class="header1">
+    <center><h1 style="color: white;">About Us</h1></center>
+  </div>
+
+  <div class="para1" style="color: white;">
+<p style="margin-left: 5%; margin-right: 5%;">Movies are a part and parcel of life. There are different types of movies like some for 
+  entertainment, some for educational purposes, some are animated movies for children, 
+  and some are horror movies or action films. Movies can be easily differentiated through 
+  their genres like comedy, thriller, animation, action etc. Movie 
+  Recommendation Systems helps us to search our preferred movies among all of these 
+  different types of movies and hence reduce the trouble of spending a lot of time 
+  searching our favourable movies</p>
+  <p style="margin-left: 5%; margin-right: 5%;">A recommendation system or recommendation engine is a model used for information filtering where it tries to predict the preferences of a user and provide suggests based on these preferences.
+    These systems collect information about a user's preferences and behavior, and then use this information to improve their suggestions in the future.
+
+  </p>
+  <br>
+ <center><img src="../static/abo.png" alt=""></center> 
+
+
+
+  </div>
+</body>          
+        
+
+</html>
